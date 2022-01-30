@@ -30,6 +30,8 @@ sudo apt install -y xscreensaver
 # Install Chrome browser
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg --install google-chrome-stable_current_amd64.deb
+sudo apt-get install -f
+
 sudo apt install -y --fix-broken
 
 # Cleanup remove the unnecessary files after the installation is done:
