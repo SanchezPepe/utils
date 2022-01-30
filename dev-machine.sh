@@ -1,10 +1,14 @@
 #!/bin/sh
 
 # Get the latest package list
-sudo apt update
+# sudo apt update
 
 # Do the updates
+# sudo apt-get update
+
 sudo apt-get update
+sudo apt-get upgrade
+sudo apt --fix-broken install
 
 # install wget
 sudo apt install -y software-properties-common apt-transport-https wget
@@ -30,8 +34,6 @@ sudo apt install -y xscreensaver
 # Install Chrome browser
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg --install google-chrome-stable_current_amd64.deb
-sudo apt-get install -f
-
 sudo apt install -y --fix-broken
 
 # Cleanup remove the unnecessary files after the installation is done:
