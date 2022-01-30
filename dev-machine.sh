@@ -63,4 +63,4 @@ sudo apt install npm
 
 # Install Vue.js
 # latest stable
-$ npm install vue
+npm install vue
