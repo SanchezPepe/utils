@@ -1,13 +1,10 @@
 #!/bin/sh
 
 # Get the latest package list
-# sudo apt update
+sudo apt update
 
 # Do the updates
-# sudo apt-get update
-
 sudo apt-get update
-sudo apt-get upgrade
 sudo apt --fix-broken install
 
 # install wget
@@ -60,10 +57,10 @@ sudo apt-get install -y google-cloud-sdk
 sudo snap install --classic code
 
 # Install Node.js
-sudo apt install nodejs
+sudo apt install -y nodejs
 
 # Install Npm
-sudo apt install npm
+sudo apt install -y npm
 
 # Install Vue.js
 # latest stable
