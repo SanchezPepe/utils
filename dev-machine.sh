@@ -18,11 +18,10 @@ sudo dpkg --install chrome-remote-desktop_current_amd64.deb
 sudo apt install -y --fix-broken
 
 # install GNOME
-sudo DEBIAN_FRONTEND=noninteractive \
-    apt-get install -y ubuntu-gnome-desktop
+#sudo DEBIAN_FRONTEND=noninteractive \
+#    apt-get install -y ubuntu-gnome-desktop
     
-touch .xsession
-echo 'gnome-session' >> .xsession
+sudo tasksel install ubuntu-desktop
 
 # Configure Chrome Remote Desktop to use GNOME by default:
 sudo bash -c 'echo "exec /etc/X11/Xsession /usr/bin/gnome-session" > /etc/chrome-remote-desktop-session'
