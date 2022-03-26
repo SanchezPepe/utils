@@ -65,3 +65,19 @@ sudo apt install -y npm
 # Install Vue.js
 # latest stable
 npm install vue
+
+//Install VSCOde
+wget https://code.visualstudio.com/docs/?dv=linux64_deb
+sudo apt install ./code_1.65.2-1646927742_amd64.deb
+
+//Clear NPM cache
+npm cache clean -f
+
+//Update NPM
+npm install -g npm@latest
+
+// node version manager
+npm install -g n
+
+//Upgrade Node
+sudo n stable
