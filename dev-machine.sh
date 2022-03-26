@@ -10,6 +10,8 @@ sudo apt --fix-broken install
 # install wget
 sudo apt install -y software-properties-common apt-transport-https wget
 
+sudo apt install --assume-yes wget tasksel
+
 # Download the Debian Linux Chrome Remote Desktop installation package:
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
 
