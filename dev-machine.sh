@@ -17,7 +17,11 @@ wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
 sudo dpkg --install chrome-remote-desktop_current_amd64.deb
 sudo apt install -y --fix-broken
 
-sudo apt install -y gnome-session gdm3
+# install GNOME
+sudo DEBIAN_FRONTEND=noninteractive apt-get install -y ubuntu-gnome-desktop
+
+# Configure Chrome Remote Desktop to use GNOME by default:
+sudo bash -c 'echo "exec /etc/X11/Xsession exec gnome-wm" > /etc/chrome-remote-desktop-session'
 
 # install xcfe
 #sudo DEBIAN_FRONTEND=noninteractive \
