@@ -18,8 +18,8 @@ sudo dpkg --install chrome-remote-desktop_current_amd64.deb
 sudo apt install -y --fix-broken
 
 # install xcfe
-sudo DEBIAN_FRONTEND=noninteractive \
-    apt install -y xfce4 xfce4-goodies desktop-base
+#sudo DEBIAN_FRONTEND=noninteractive \
+#    apt install -y xfce4 xfce4-goodies desktop-base
 
 # Configure Chrome Remote Desktop to use Xfce by default:
 sudo bash -c 'echo "exec /etc/X11/Xsession /usr/bin/xfce4-session" > /etc/chrome-remote-desktop-session'
