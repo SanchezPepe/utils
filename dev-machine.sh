@@ -28,6 +28,9 @@ sudo tasksel install ubuntu-desktop
 # Configure Chrome Remote Desktop to use GNOME by default:
 sudo bash -c 'echo "exec /etc/X11/Xsession /usr/bin/gnome-session" > /etc/chrome-remote-desktop-session'
 
+# Disable animations to improve performance
+gsettings set org.gnome.desktop.interface enable-animations false
+
 # install xcfe
 #sudo DEBIAN_FRONTEND=noninteractive \
 #    apt install -y xfce4 xfce4-goodies desktop-base
