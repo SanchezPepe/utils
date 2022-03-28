@@ -65,3 +65,15 @@ sudo apt install -y npm
 # Install Vue.js
 # latest stable
 npm install vue
+
+//Clear NPM cache
+npm cache clean -f
+
+//Update NPM
+npm install -g npm@latest
+
+// node version manager
+npm install -g n
+
+//Upgrade Node
+sudo n stable
