@@ -31,17 +31,6 @@ sudo bash -c 'echo "exec /etc/X11/Xsession /usr/bin/gnome-session" > /etc/chrome
 # Disable animations to improve performance
 gsettings set org.gnome.desktop.interface enable-animations false
 
-# install xcfe
-#sudo DEBIAN_FRONTEND=noninteractive \
-#    apt install -y xfce4 xfce4-goodies desktop-base
-
-# Configure Chrome Remote Desktop to use Xfce by default:
-# sudo bash -c 'echo "exec /etc/X11/Xsession /usr/bin/xfce4-session" > /etc/chrome-remote-desktop-session'
-
-# Xfce's default screen locker is Light Locker, which doesn't work with Chrome Remote Desktop. 
-# install XScreenSaver as an alternative:
-#sudo apt install -y xscreensaver
-
 # Install Chrome browser
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg --install google-chrome-stable_current_amd64.deb
