@@ -77,3 +77,8 @@ npm install -g n
 
 //Upgrade Node
 sudo n stable
+
+//Git config
+git config --global user.name "sanchezpepe"
+git config --global user.email sanchezpepe97@gmail.com
+
