@@ -66,19 +66,19 @@ sudo apt install -y npm
 # latest stable
 npm install vue
 
-//Clear NPM cache
+# Clear NPM cache
 npm cache clean -f
 
-//Update NPM
+# Update NPM
 npm install -g npm@latest
 
-// node version manager
+# node version manager
 npm install -g n
 
-//Upgrade Node
+# Upgrade Node
 sudo n stable
 
-//Git config
+# Git config
 git config --global user.name "sanchezpepe"
 git config --global user.email sanchezpepe97@gmail.com
 
