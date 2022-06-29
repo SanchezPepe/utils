@@ -7,12 +7,12 @@ sudo apt update
 sudo apt-get update
 sudo apt --fix-broken install
 
-# Install the Google Cloud SDK
-sudo apt-get update 
-sudo apt-get install -y google-cloud-sdk
+# Code Server Install
+curl -fsSL https://code-server.dev/install.sh | sh
 
-# Install Visual Studio Code
-sudo snap install --classic code
+# Git config
+git config --global user.name "sanchezpepe"
+git config --global user.email sanchezpepe97@gmail.com
 
 # Install Node.js
 sudo apt install -y nodejs
@@ -35,10 +35,3 @@ npm install -g n
 
 # Upgrade Node
 sudo n stable
-
-# Git config
-git config --global user.name "sanchezpepe"
-git config --global user.email sanchezpepe97@gmail.com
-
-# Code Server Install
-curl -fsSL https://code-server.dev/install.sh | sh
