@@ -7,10 +7,6 @@ sudo apt update
 sudo apt-get update
 sudo apt --fix-broken install
 
-# Git config
-git config --global user.name "sanchezpepe"
-git config --global user.email sanchezpepe97@gmail.com
-
 # Install Node.js
 sudo apt install -y nodejs
 
@@ -32,3 +28,10 @@ npm install -g n
 
 # Upgrade Node
 sudo n stable
+
+# Install Git
+sudo apt install git-all
+
+# Git config
+git config --global user.name "sanchezpepe"
+git config --global user.email sanchezpepe97@gmail.com
