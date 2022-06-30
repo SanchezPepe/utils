@@ -8,6 +8,6 @@ gcloud compute instances create dev-vm \
 --boot-disk-size=10GB \
 --boot-disk-type=pd-ssd \
 --boot-disk-device-name=dev-vm \
---metadata-from-file=startup-script=dev.sh \
+--metadata-from-file=startup-script=code-server.sh \
 --network-tier=STANDARD \
 --tags=http-server-8080
